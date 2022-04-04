@@ -12,7 +12,7 @@ blur = cv.GaussianBlur(img, (5,5), cv.BORDER_DEFAULT)
 cv.imshow('Blur', blur)
 
 # Edge Cascade
-canny = cv.Canny(img, 125,175)
+canny = cv.Canny(blur, 125,175)
 cv.imshow('Canny Edges', canny)
 
 # Dilating the image
